@@ -1,0 +1,669 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*sidebar header*/
+header{
+    background-image: url(img/Plaza-de-Armas-de-Cusco.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    animation: fondo 40s infinite;
+    animation-delay: 5s;
+}
+@keyframes fondo{
+    20%{
+        background-image: url(img/coricancha3.jpg);
+        background-size: cover;
+    }
+    
+    40%{
+        background-image: url(img/complejo-inca-ollantaytambo.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(img/HISTORIA-DE-SACSAYHUAMAN-7.jpg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(img/Salineras-de-Maras.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(img/recinto-pucapucara-cusco.jpg);
+        background-size: cover;
+    }
+}
+
+
+/*menu de navegacion*/
+.menu-bar{
+    text-align:center;
+    position: static;
+    
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    background:rgba(0, 0, 0, 0.3);
+    
+}
+.menu-bar .logo{
+    margin-right: 500px;
+}
+.menu-bar ul li{
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.menu-bar ul li a:hover{
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.menu-bar ul li:hover{
+    background:rgb(145, 71, 71);
+    border-radius: 15px;
+}
+
+.menu-bar .material-symbols-outlined{
+    margin-right: 8px;
+    margin-left: 8px;
+    color: red;
+}
+.menu-bar .material-symbols-outlined:hover{
+    color: rgb(252, 250, 250);
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: fixed;
+    background:rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 9.8px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a{
+    font-size: 1rem;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: rgb(251, 251, 251);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.sub-menu-2{
+    display: none;
+
+}
+
+.submenu:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -52px;
+    margin-left: 180px;
+    background:rgba(0, 0, 0, 0.5); 
+}
+
+.titulo-header{
+    margin: 100px 400px auto 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.titulo-header h1{
+    text-align: center;
+    /*margin: 10px auto 50px auto;*/
+    font-size: 4rem;
+    padding-top: 20px;
+    color: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    
+}
+
+.titulo-header p{
+    display: block;
+    padding: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Signika', sans-serif;
+}
+.subtxt{
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.contenedordestino{
+    width: 100%;
+    
+}
+.destino {
+    margin-bottom: 100px;
+}
+
+.titulodestino{
+    
+    font-size: 2.2rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.parrafodestinoppal{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 50px;
+    text-align: justify;
+    
+    
+}
+.parrafodestino{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 180px;
+    text-align: justify;
+}
+.subdestino{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 150px;
+    padding-right: 20px;
+    
+}
+.intromain{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.intromain p{
+    margin-bottom: 10px;
+}
+
+/*estilos de cards*/
+img{
+    width: 100%;
+    display: block;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.card-header{
+    height: 200px;
+    width: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+.card-title{
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.card-description{
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-header img{
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    
+}
+.card-body{
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+    padding: 20px 15px;
+    text-align: justify;
+    border: 1px solid #ccc;
+}
+.btn{
+    display: block;
+    background-color: grey;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+@media(min-width: 480px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:  10px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-body{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*machu pichu*/
+.machupichu{
+    background-image: url(img/MPICHU1.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    animation: fondo 40s infinite;
+    animation-delay: 5s;
+}
+@keyframes fondo{
+    20%{
+        background-image: url(img/MPICHU2.jpg);
+        background-size: cover;
+    }
+    
+    40%{
+        background-image: url(img/el-primer-destino-turistico-sin-huella-de-carbono_b27f2221_1600x1067.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(img/machupichu3.jpg);
+        background-size: cover;
+    }
+    80%{
+        background-image: url(img/machu-picchu-ingeneria-agricola-1552409084.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    100%{
+        background-image: url(img/machu-picchu_552ad617_1254x837.jpg);
+        background-size: cover;
+    }
+}
+.container_mpichu{
+    width: 80%;
+    margin: auto;
+}
+.container_mpichu img{
+    width: 450px;
+    margin: auto;
+    padding: 30px;
+    border-color: 1px solid black;
+}
+
+/*descripcion*/
+.descripcion{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 7fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "parrafo imagen";
+    background-color: bisque;
+    
+}
+
+.descripcion .subdescr{
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin: 80px 0px 10px 50px;
+}
+.descripcion .subdescrparrafo{
+    grid-area: parrafo;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 5px 30px;
+    margin: auto;
+}
+.descripcion .subdescrimg{
+    grid-area: imagen;
+}
+
+/*historia*/
+.historia{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 7fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagen parrafo";
+    background-color: bisque;
+    
+}
+.historia .subdescr{
+    grid-area: titulo;
+    text-align: start;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin: 80px 0px 10px 50px;
+}
+.historia .subdescrparrafo{
+    grid-area: parrafo;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 5px 30px;
+    margin: auto;
+}
+.historia .subdescrimg{
+    grid-area: imagen;
+}
+
+/*interes*/
+.interes{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 7fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "parrafo imagen";
+    background-color: bisque;
+    
+}
+
+.interes .subdescr{
+    grid-area: titulo;
+    text-align: start;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin: 80px 0px 10px 50px;
+}
+.interes .subdescrparrafo{
+    grid-area: parrafo;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 5px 30px;
+    margin: auto;
+}
+.interes .subdescrimg{
+    grid-area: imagen;
+}
+
+/*mapa*/
+.mapa {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 7fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagen parrafo";
+    background-color: rgb(246, 187, 114);
+    
+}
+
+.mapa .subdescr{
+    grid-area: titulo;
+    text-align: start;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin: 80px 0px 10px 50px;
+}
+.mapa .subdescrparrafo{
+    grid-area: parrafo;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 15px 30px;
+    margin: auto 30px;
+    background-color:rgba(142, 91, 9, 0.2);
+    border-radius: 10px;
+    border:2px solid antiquewhite ;
+    box-shadow: 5px 5px 15px rgb(67, 66, 66);
+}
+.mapa .subdescrimg{
+    grid-area: imagen;
+    width: 500px;
+}
+
+.tickets{
+    margin-top: -70px;
+    background-color: bisque;
+    height: 250px;
+}
+
+.tickets .subdescr{
+    padding: 50px 0 10px 0;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+    margin: 70px 0px 10px 50px;
+}
+.tickets .subdescrparrafo{
+    
+    font-family: 'Signika', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 15px 30px;
+    margin: auto 30px;
+    background-color:rgba(142, 91, 9, 0.2);
+    border-radius: 10px;
+    border:2px solid antiquewhite ;
+    box-shadow: 5px 5px 15px rgb(67, 66, 66);
+}
+
+.material-symbols-outlined{
+    color: gold;
+    margin-top: 5px; 
+    float:inline-start;
+}
+
+/*card hotel*/
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 68vh;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.titulo-hotel{
+    font-size: 3rem;
+    margin-top: 35px;
+    margin-bottom: -100px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+}
+.card-hotel{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+.card-hotel .cara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1.5s;
+}
+
+.card-hotel .frente{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card-hotel .frente img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-hotel .frente h4{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.card-hotel .dorso{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    box-shadow: 0 5px 10px #000;
+}
+.card-hotel .dorso .link{
+    border-top: 1px solid #f3f3f3;
+    padding: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.card-hotel .dorso .link a{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+.card-hotel .dorso .link a:hover{
+    background:rgb(255, 241, 220);
+    color: rgb(3, 35, 54);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.card-hotel .dorso h4{
+    font-size: 30px;
+    margin: 5px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    background:rgb(255, 241, 220);
+    color: rgb(3, 35, 54);
+
+}
+.card-hotel .dorso p{
+    letter-spacing: 1px;
+    margin: 5px;
+    text-align: center;
+}
+
+.card-hotel:hover .frente{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card-hotel:hover .dorso{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*restaurant*/
+
+.card-hotel .dorso-r{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card-hotel .dorso-r .link{
+    border-top: 1px solid #f3f3f3;
+    padding: 20px;
+    height: 70px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+.card-hotel .dorso-r .link a{
+    color: #f3f3f3;
+    text-decoration: none;
+    
+}
+.card-hotel .dorso-r .link a:hover{
+    background:rgb(255, 241, 220);
+    color: rgb(3, 35, 54);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.card-hotel .dorso-r h4{
+    font-size: 30px;
+    margin: 5px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    background:rgb(255, 241, 220);
+    color: rgb(3, 35, 54);
+
+}
+.card-hotel .dorso-r p{
+    letter-spacing: 1px;
+    margin: 5px;
+    text-align: start;
+}
+
+
+.card-hotel:hover .dorso-r{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/*footer*/
+
+.footer{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 50px;
+    height: 100px;
+    background-color: bisque;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
