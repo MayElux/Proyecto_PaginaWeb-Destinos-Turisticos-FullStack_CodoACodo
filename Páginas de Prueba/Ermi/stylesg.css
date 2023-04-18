@@ -1,0 +1,120 @@
+/******************************GRID*****************************/
+* {
+	margin: 1;
+	padding: 0;
+}
+
+body {
+	background: #E9ECF4;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+
+
+
+.contenedor .footer {
+	background: #12203E;
+	color: #fff;
+	grid-area: footer;
+    height: 15px;
+
+}
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "footer footer footer";
+	}
+}
+
+
+
+/**************************HEADER*************************/
+
+.nav-enlace {
+    
+    display: inline-block;
+    background: #55a8fd;
+    color: #fff;
+    padding: 10px 30px;
+    /* Eliminar el subrayado del link */
+    text-decoration: none;
+}
+
+.nav-enlace:hover {
+    background: rosybrown;
+}
+
+/* Contenedor principal */
+nav {
+    padding: 5px;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: space-around;
+    /* flex-direction: row; */
+}
+
+ @media (max-width: 500px) {
+    nav {
+        background: black;
+        flex-direction: column;
+    }
+
+    .nav-enlace {
+        margin: 10px 10;
+    } 
+
+}
+
+
+.imagenes{
+    height: 300px;
+    width: 100%;
+}
+/*************************FOOTER**************************/
+.nav-enlacef {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 10px;
+    /* Eliminar el subrayado del link */
+    text-decoration: none;
+    width: 2%;
+    height: 100%;
+    
+}
